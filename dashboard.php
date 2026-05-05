@@ -14,104 +14,101 @@ if(!isset($_SESSION['user'])){
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jasain.co</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f1f5f9;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
 
-/* HEADER ATAS */
-.header {
-    background: #334155;
-    color: white;
-    padding: 15px 30px;
-}
+        .topbar {
+            background: #334155;
+            color: white;
+        }
 
-.header h2 {
-    margin: 0;
-    margin-left: 400px;
-}
+        .topbar-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 15px 0;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.header p {
-    margin: 3px 0 0;
-    font-size: 13px;
-    margin-left: 400px;
-    color: #cbd5f5;
-}
+        /* BRAND */
+        .brand h2 {
+            margin: 0;
+        }
 
-/* NAVBAR */
-.navbar {
-    background: #475569;
-    padding: 10px 30px;
-}
+        .brand p {
+            margin: 3px 0 0;
+            font-size: 12px;
+            color: #cbd5f5;
+        }
 
-.navbar a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-}
+        /* NAVBAR */
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
 
-.nav-container {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    gap: 15px;
-}
+        .container {
+            margin: 30px auto;
+            max-width: 1100px;
+        }
 
-.container {
-    margin: 30px auto;
-    max-width: 1100px;
-}
+        /* CARD */
+        .card {
+            background: #ffffff;
+            padding: 20px;
+        }
 
-/* CARD */
-.card {
-    background: #ffffff;
-    padding: 20px;
-}
+        .card h3 {
+            margin-top: 0;
+        }
 
-.card h3 {
-    margin-top: 0;
-}
+        /* BUTTON */
+        button {
+            padding: 8px 15px;
+            background: #14b8a6;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
 
-/* BUTTON */
-button {
-    padding: 8px 15px;
-    background: #14b8a6;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-}
-
-/* FIX LINK DALAM BUTTON */
-button a {
-    color: white;
-    text-decoration: none;
-}
-</style>
+        /* FIX LINK DALAM BUTTON */
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <h2>jasain.co</h2>
-    <p>Layanan Penyedia jasa Terpercaya</p>
+<div class="topbar">
+    <div class="topbar-container">
+        <div class="brand">
+            <h2>jasain.co</h2>
+            <p>Layanan Penyedia jasa Terpercaya</p>
 </div>
 
-<!-- NAVBAR -->
-<div class="navbar">
-    <div class="nav-container">
-        <a href="#">Beranda</a>
-        <a href="rental.php">Rental</a>
-        <a href="jasa_angkut.php">Jasa Angkut</a>
-        <a href="#">Service Elektronik</a>
-        <a href ="#">Laundry</a>
-        <a href="#">Profil</a>
+        <!-- BAGIAN NAVBAR -->
+        <div class="nav-links">
+            <a href="#">Beranda</a>
+            <a href="rental.php">Rental</a>
+            <a href="angkut.php">Angkut</a>
+            <a href="servis.php">Servis</a>
+            <a href="laundry.php">Laundry</a>
+            <a href="#">Profil</a>
+        </div>
     </div>
 </div>
 
@@ -148,7 +145,9 @@ button a {
         <div class="card">
             <h3>Laundry</h3>
             <p>Cuci & setrika cepat dan bersih.</p>
-            <button>Lihat</button>
+             <button>
+                <a href="laundry.php">Lihat</a>
+            </button>
         </div>
 
     </div>
