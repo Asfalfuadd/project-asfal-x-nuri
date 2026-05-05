@@ -21,45 +21,41 @@ if(!isset($_SESSION['user'])){
             background-color: #f1f5f9;
         }
 
-        /* HEADER ATAS */
-        .header {
+        .topbar {
             background: #334155;
             color: white;
-            padding: 15px 30px;
         }
 
-        .header h2 {
+        .topbar-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 15px 0;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* BRAND */
+        .brand h2 {
             margin: 0;
-            margin-left: 400px;
         }
 
-        .header p {
+        .brand p {
             margin: 3px 0 0;
-            font-size: 13px;
-            margin-left: 400px;
+            font-size: 12px;
             color: #cbd5f5;
         }
 
         /* NAVBAR */
-        .navbar {
-            background: #475569;
-            padding: 10px 30px;
-        }
-
-        .navbar a {
+        .nav-links a {
             color: white;
-            margin-right: 15px;
             text-decoration: none;
+            margin-left: 15px;
             padding: 8px 12px;
             border-radius: 5px;
             font-size: 14px;
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            gap: 15px;
+            transition: 0.3s;
         }
         
         .content {
@@ -141,23 +137,21 @@ if(!isset($_SESSION['user'])){
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <div class="header-container">
-        <h2>jasain.co</h2>
-        <p>Layanan Penyedia jasa Terpercaya</p>
-    </div>
+<div class="topbar">
+    <div class="topbar-container">
+        <div class="brand">
+            <h2>jasain.co</h2>
+            <p>Layanan Penyedia jasa Terpercaya</p>
 </div>
-
-<!-- NAVBAR -->
-<div class="navbar">
-    <div class="nav-container">
-        <a href="dashboard.php">Beranda</a>
-        <a href="rental.php">Rental</a>
-        <a href="jasa_angkut.php">Jasa Angkut</a>
-        <a href="#">Service Elektronik</a>
-        <a href ="laundry.php">Laundry</a>
-        <a href="#">Profil</a>
+        <!-- BAGIAN NAVBAR -->
+        <div class="nav-links">
+            <a href="dashboard.php">Beranda</a>
+            <a href="rental.php">Rental</a>
+            <a href="angkut.php">Angkut</a>
+            <a href="servis.php">Servis</a>
+            <a href="laundry.php">Laundry</a>
+            <a href="#">Profil</a>
+        </div>
     </div>
 </div>
 
