@@ -12,109 +12,110 @@ if(!isset($_SESSION['user'])){
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard User</title>
+<title>Jasain.co</title>
 
 <style>
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
+    background-color: #f1f5f9;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #020617;
+/* HEADER ATAS */
+.header {
+    background: #334155;
+    color: white;
     padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.navbar h2 {
+.header h2 {
     margin: 0;
+    margin-left: 400px;
 }
 
-.nav-links a {
+.header p {
+    margin: 3px 0 0;
+    font-size: 13px;
+    margin-left: 400px;
+    color: #cbd5f5;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #475569;
+    padding: 10px 30px;
+}
+
+.navbar a {
     color: white;
-    margin-left: 20px;
+    margin-right: 15px;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
     font-size: 14px;
-    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #38bdf8;
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 15px;
 }
 
 .container {
-    padding: 30px;
+    margin: 30px auto;
+    max-width: 1100px;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
+/* CARD */
 .card {
-    background: #1e293b;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .card h3 {
     margin-top: 0;
 }
 
+/* BUTTON */
 button {
     padding: 8px 15px;
-    background: #38bdf8;
+    background: #14b8a6;
     border: none;
     border-radius: 5px;
-    color: black;
+    color: white;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    background: #0ea5e9;
-}
-
-.search-box {
-    margin: 20px 0;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+/* FIX LINK DALAM BUTTON */
+button a {
+    color: white;
+    text-decoration: none;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div class="header">
+    <h2>jasain.co</h2>
+    <p>Layanan Penyedia jasa Terpercaya</p>
+</div>
+
+<!-- NAVBAR -->
 <div class="navbar">
-    <h2>JasaIn.co</h2>
-    <div class="nav-links">
-        <a href="#">Dashboard</a>
-        <a href="#">Jasa</a>
-        <a href="#">Booking</a>
-        <a href="#">Harga</a>
-        <a href="#">Notifikasi</a>
-        <a href="#">Riwayat</a>
+    <div class="nav-container">
+        <a href="#">Beranda</a>
+        <a href="rental.php">Rental</a>
+        <a href="jasa_angkut.php">Jasa Angkut</a>
+        <a href="#">Service Elektronik</a>
+        <a href ="#">Laundry</a>
         <a href="#">Profil</a>
     </div>
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
     <h1>Cari Jasa yang Kamu Butuhkan 🔍</h1>
@@ -125,13 +126,17 @@ button:hover {
         <div class="card">
             <h3>Rental Kendaraan</h3>
             <p>Sewa motor / mobil dengan harga terjangkau.</p>
-            <button>Lihat</button>
+            <button>
+                <a href="rental.php">Lihat</a>
+            </button>
         </div>
 
         <div class="card">
             <h3>Jasa Angkut Barang</h3>
             <p>Pindahan & kirim barang jadi lebih mudah.</p>
-            <button>Lihat</button>
+            <button>
+                <a href="jasa_angkut.php">Lihat</a>
+            </button>
         </div>
 
         <div class="card">
