@@ -29,7 +29,7 @@ if(!isset($_SESSION['user'])){
         .topbar-container {
             max-width: 1100px;
             margin: auto;
-            padding: 15px 0;
+            padding: 15px 30px;
             
             display: flex;
             justify-content: space-between;
@@ -102,7 +102,7 @@ if(!isset($_SESSION['user'])){
 
         <!-- BAGIAN NAVBAR -->
         <div class="nav-links">
-            <a href="#">Beranda</a>
+            <a href="dashboard.php">Beranda</a>
             <a href="rental.php">Rental</a>
             <a href="angkut.php">Angkut</a>
             <a href="servis.php">Servis</a>
@@ -132,14 +132,16 @@ if(!isset($_SESSION['user'])){
             <h3>Jasa Angkut Barang</h3>
             <p>Pindahan & kirim barang jadi lebih mudah.</p>
             <button>
-                <a href="jasa_angkut.php">Lihat</a>
+                <a href="angkut.php">Lihat</a>
             </button>
         </div>
 
         <div class="card">
             <h3>Service Elektronik</h3>
             <p>Perbaikan HP, laptop, dan perangkat lainnya.</p>
-            <button>Lihat</button>
+            <button>
+                <a href="servis.php">Lihat</a>
+            </button>
         </div>
 
         <div class="card">
