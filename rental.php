@@ -14,45 +14,41 @@ session_start();
             background-color: #f1f5f9;
         }
 
-        /* HEADER ATAS */
-        .header {
+        .topbar {
             background: #334155;
             color: white;
-            padding: 15px 30px;
         }
 
-        .header h2 {
+        .topbar-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 15px 0;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* BRAND */
+        .brand h2 {
             margin: 0;
-            margin-left: 400px;
         }
 
-        .header p {
+        .brand p {
             margin: 3px 0 0;
-            font-size: 13px;
-            margin-left: 400px;
+            font-size: 12px;
             color: #cbd5f5;
         }
 
         /* NAVBAR */
-        .navbar {
-            background: #475569;
-            padding: 10px 30px;
-        }
-
-        .navbar a {
+        .nav-links a {
             color: white;
-            margin-right: 15px;
             text-decoration: none;
+            margin-left: 15px;
             padding: 8px 12px;
             border-radius: 5px;
             font-size: 14px;
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            gap: 15px;
+            transition: 0.3s;
         }
         
         .content {
@@ -133,21 +129,22 @@ session_start();
 </head>
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <h2>jasain.co</h2>
-    <p>Layanan Penyedia jasa Terpercaya</p>
+<div class="topbar">
+    <div class="topbar-container">
+        <div class="brand">
+            <h2>jasain.co</h2>
+            <p>Layanan Penyedia jasa Terpercaya</p>
 </div>
 
-<!-- NAVBAR -->
-<div class="navbar">
-    <div class="nav-container">
-        <a href="dashboard.php">Beranda</a>
-        <a href="rental.php">Rental</a>
-        <a href="jasa_angkut.php">Jasa Angkut</a>
-        <a href="#">Service Elektronik</a>
-        <a href ="#">Laundry</a>
-        <a href="#">Profil</a>
+        <!-- BAGIAN NAVBAR -->
+        <div class="nav-links">
+            <a href="dashboard.php">Beranda</a>
+            <a href="rental.php">Rental</a>
+            <a href="angkut.php">Angkut</a>
+            <a href="servis.php">Servis</a>
+            <a href="laundry.php">Laundry</a>
+            <a href="#">Profil</a>
+        </div>
     </div>
 </div>
 
@@ -163,9 +160,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Toyota Avanza</h3>
-                        <p><strong>Tipe:</strong> MPV</p>
-                        <p><strong>Kapasitas:</strong> 7 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Manual</p>
+                        <p>Tipe: MPV</p>
+                        <p>Kapasitas: 7 Penumpang</p>
+                        <p>Transmisi: Manual</p>
                         <div class="price">Rp 300.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
@@ -178,9 +175,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Honda Jazz</h3>
-                        <p><strong>Tipe:</strong> Hatchback</p>
-                        <p><strong>Kapasitas:</strong> 5 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Otomatis</p>
+                        <p>Tipe: Hatchback</p>
+                        <p>Kapasitas: 5 Penumpang</p>
+                        <p>Transmisi: Otomatis</p>
                         <div class="price">Rp 250.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
@@ -193,9 +190,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Daihatsu Gran Max</h3>
-                        <p><strong>Tipe:</strong> Minibus</p>
-                        <p><strong>Kapasitas:</strong> 14 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Manual</p>
+                        <p>Tipe: Minibus</p>
+                        <p>Kapasitas: 14 Penumpang</p>
+                        <p>Transmisi: Manual</p>
                         <div class="price">Rp 500.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
@@ -208,9 +205,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Nissan Serena</h3>
-                        <p><strong>Tipe:</strong> MPV</p>
-                        <p><strong>Kapasitas:</strong> 8 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Otomatis</p>
+                        <p>Tipe: MPV</p>
+                        <p>Kapasitas: 8 Penumpang</p>
+                        <p>Transmisi: Otomatis</p>
                         <div class="price">Rp 450.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
@@ -223,9 +220,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Suzuki APV</h3>
-                        <p><strong>Tipe:</strong> Van</p>
-                        <p><strong>Kapasitas:</strong> 8 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Manual</p>
+                        <p>Tipe: Van</p>
+                        <p>Kapasitas: 8 Penumpang</p>
+                        <p>Transmisi: Manual</p>
                         <div class="price">Rp 350.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
@@ -238,9 +235,9 @@ session_start();
                     <div class="rental-image">Foto Kendaraan</div>
                     <div class="rental-info">
                         <h3>Toyota Fortuner</h3>
-                        <p><strong>Tipe:</strong> SUV</p>
-                        <p><strong>Kapasitas:</strong> 7 Penumpang</p>
-                        <p><strong>Transmisi:</strong> Otomatis</p>
+                        <p>Tipe: SUV</p>
+                        <p>Kapasitas: 7 Penumpang</p>
+                        <p>Transmisi: Otomatis</p>
                         <div class="price">Rp 600.000/Hari</div>
                         <div class="button-group">
                             <a href="#" class="btn btn-primary">Pesan</a>
