@@ -64,14 +64,14 @@ if(!isset($_SESSION['user'])){
             padding: 30px;
         }
         
-        .laundry-list {
+        .servis-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
         
-        .laundry-card {
+        .servis-card {
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -88,17 +88,17 @@ if(!isset($_SESSION['user'])){
             font-size: 14px;
         }
         
-        .laundry-info {
+        .servis-info {
             padding: 15px;
         }
         
-        .laundry-info h3 {
+        .servis-info h3 {
             font-size: 18px;
             margin-bottom: 10px;
             color: #2c3e50;
         }
         
-        .laundry-info p {
+        .servis-info p {
             font-size: 14px;
             margin-bottom: 8px;
             color: #7f8c8d;
@@ -157,14 +157,14 @@ if(!isset($_SESSION['user'])){
 
     <div class="container">
         <div class="content">
-            <h2>Daftar Layanan Laundry</h2>
+            <h2>Daftar Layanan Servis</h2>
             <p>Pilih layanan servis sesuai kebutuhan Anda</p>
 
-            <div class="laundry-list">
+            <div class="servis-list">
                 <!-- CARD 1 -->
-                <div class="laundry-card">
+                <div class="servis-card">
                     <div class="image">Foto Servis</div>
-                    <div class="laundry-info">
+                    <div class="servis-info">
                         <h3>Servis Laptop</h3>
                         <p>Layanan: Perbaikan + Pemeriksaan</p>
                         <p>Estimasi: 1-5 Hari</p>
@@ -177,9 +177,9 @@ if(!isset($_SESSION['user'])){
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="laundry-card">
+                <div class="servis-card">
                     <div class="image">Foto Servis</div>
-                    <div class="laundry-info">
+                    <div class="servis-info">
                         <h3>Servis Handphone</h3>
                         <p>Layanan: Perbaikan + Pemeriksaan</p>
                         <p>Estimasi: 1-3 Hari</p>
@@ -192,9 +192,9 @@ if(!isset($_SESSION['user'])){
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="laundry-card">
+                <div class="servis-card">
                     <div class="image">Foto Servis</div>
-                    <div class="laundry-info">
+                    <div class="servis-info">
                         <h3>Servis Tv</h3>
                         <p>Layanan: Perbaikan + Pemeriksaan</p>
                         <p>Estimasi: 1-5 Hari</p>
